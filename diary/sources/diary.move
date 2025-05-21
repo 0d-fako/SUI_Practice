@@ -5,7 +5,8 @@ module diary::diary(
 
 
     public fun hello_world(): String{
-        let greet = b"Hello World".to_string()
+        let greet = b"Hello World".to_string();
+        greet
 
     }
 )

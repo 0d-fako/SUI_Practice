@@ -7,7 +7,7 @@ const ENotImplemented: u64 = 0;
 
 #[test]
 fun test_diary() {
-    assert!(dairy::hello_world() == b"Hello World".to_string());
+    assert!(diary::hello_world() == b"Hello World".to_string());
 }
 
 // #[test, expected_failure(abort_code = ::diary::diary_tests::ENotImplemented)]
