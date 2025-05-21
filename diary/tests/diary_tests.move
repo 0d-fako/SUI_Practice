@@ -1,18 +1,16 @@
-/*
 #[test_only]
 module diary::diary_tests;
-// uncomment this line to import the module
-// use diary::diary;
+
+use diary::diary;
 
 const ENotImplemented: u64 = 0;
 
 #[test]
 fun test_diary() {
-    // pass
+    assert!(dairy::hello_world() == b"Hello World".to_string());
 }
 
-#[test, expected_failure(abort_code = ::diary::diary_tests::ENotImplemented)]
-fun test_diary_fail() {
-    abort ENotImplemented
-}
-*/
+// #[test, expected_failure(abort_code = ::diary::diary_tests::ENotImplemented)]
+// fun test_diary_fail() {
+//     abort ENotImplemented
+// }
